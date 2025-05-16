@@ -5,9 +5,9 @@ import { tempo } from "tempo-devtools/dist/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/h-main-portfolio/",
+  base: '/h-main-portfolio/',
   optimizeDeps: {
-    entries: ["src/main.tsx", "src/tempobook/**/*"],
+    entries: ["src/main.tsx"],
   },
   plugins: [
     react(),
