@@ -9,23 +9,13 @@ interface AboutSectionProps {
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
-  title = "About Me",
-  description = "I'm a passionate web developer with over 5 years of experience creating beautiful, responsive websites and applications. My expertise includes front-end development with React, TypeScript, and modern CSS frameworks like Tailwind. I believe in clean code, intuitive user experiences, and staying on the cutting edge of web technologies. When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.",
+  description = "We're a small development company, specializing in rebranding websites, SPAs and landing pages specifically for hotels and resorts. We offer a variety of different designs, fully customizable and beautifully made. As part of our services we also offer different AI-related solutions such as Chatbots to improve your customer support, and most importantly - to ensure you offer support to your guests 24/7, AI workflows to create invoices for your customers after they successfully create a reservation, and many more depending on what your needs are.",
   imageSrc = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
   imageAlt = "Profile photo",
 }) => {
   return (
     <section id="about" className="py-16 px-4 md:px-8 bg-background">
       <div className="container mx-auto">
-        <motion.h2
-          className="text-3xl font-bold mb-8 text-center"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {title}
-        </motion.h2>
-
         <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* Image - Left on desktop, top on mobile */}
           <motion.div
@@ -54,40 +44,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({
               <p className="text-lg leading-relaxed text-foreground/80">
                 {description}
               </p>
-              <div className="mt-6">
-                <ul className="grid grid-cols-2 gap-2 text-sm">
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      React
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      TypeScript
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      Tailwind CSS
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      Next.js
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      UI/UX Design
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="bg-primary/10 text-primary px-2 py-1 rounded mr-2">
-                      Responsive Design
-                    </span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </motion.div>
         </div>

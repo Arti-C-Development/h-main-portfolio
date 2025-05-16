@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import background from "./assets/images/hero.jpg";
 
 interface HeroSectionProps {
   title?: string;
@@ -10,14 +11,14 @@ interface HeroSectionProps {
 const HeroSection = ({
   title = "Welcome to My Portfolio",
   subtitle = "Showcasing my creative work and professional projects",
-  backgroundImage = "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&q=80",
+  backgroundImage = "./assets/images/hero.jpg", // Default background image
 }: HeroSectionProps) => {
   return (
     <section className="relative h-[600px] w-full overflow-hidden bg-gray-900">
       {/* Background Image with Gradient Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${background})` }}
       >
         {/* Gradient overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>

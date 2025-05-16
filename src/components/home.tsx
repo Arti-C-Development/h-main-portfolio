@@ -23,7 +23,7 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="text-xl font-bold"
           >
-            Portfolio
+            Arti C. Development
           </motion.div>
           <nav>
             <ul className="flex space-x-6">
@@ -77,7 +77,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="text-3xl font-bold mb-12 text-center"
             >
-              About Me
+              About Us
             </motion.h2>
             <AboutSection />
           </div>
@@ -92,7 +92,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="text-3xl font-bold mb-12 text-center"
             >
-              My Projects
+              Example Designs
             </motion.h2>
             <ProjectsGrid />
           </div>
