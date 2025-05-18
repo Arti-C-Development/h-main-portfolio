@@ -7,7 +7,7 @@ import { tempo } from "tempo-devtools/dist/vite";
 export default defineConfig({
 
   
-    base: '/showroom',
+    base: '/',
     optimizeDeps: {
       entries: ["src/main.tsx"],
     },
