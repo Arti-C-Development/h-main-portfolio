@@ -9,9 +9,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Welcome to My Portfolio",
-  subtitle = "Showcasing my creative work and professional projects",
-  backgroundImage = "./assets/images/hero.jpg", // Default background image
+  title = "Welcome to our Showroom",
+  subtitle = "Showcasing some of our creative designs tthat will inspire you",
 }: HeroSectionProps) => {
   return (
     <section className="relative h-[600px] w-full overflow-hidden bg-gray-900">
@@ -43,7 +42,7 @@ const HeroSection = ({
             className="mt-8"
           >
             <button className="rounded-md bg-white px-6 py-3 font-medium text-gray-900 transition-colors hover:bg-gray-200">
-              View My Work
+              Check out our latest projects
             </button>
           </motion.div>
         </motion.div>

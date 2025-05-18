@@ -1,5 +1,6 @@
 import React from "react";
 import { default as ProjectCard } from "./ProjectCard";
+import prop1Screenshot from "./assets/images/Proto_01_v2.png"
 
 interface Project {
   id: string;
@@ -16,9 +17,8 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({
   projects = [
     {
       id: "1",
-      title: "E-Commerce Website",
-      imageUrl:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+      title: "Startup SPA Design",
+      imageUrl: prop1Screenshot,
       link: "https://example.com/ecommerce",
     },
     {

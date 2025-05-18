@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import aiImage  from "./assets/images/AI_helper.png";
 
 interface AboutSectionProps {
   title?: string;
@@ -10,8 +11,7 @@ interface AboutSectionProps {
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   description = "We're a small development company, specializing in rebranding websites, SPAs and landing pages specifically for hotels and resorts. We offer a variety of different designs, fully customizable and beautifully made. As part of our services we also offer different AI-related solutions such as Chatbots to improve your customer support, and most importantly - to ensure you offer support to your guests 24/7, AI workflows to create invoices for your customers after they successfully create a reservation, and many more depending on what your needs are.",
-  imageSrc = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
-  imageAlt = "Profile photo",
+  imageAlt = "Future is AI",
 }) => {
   return (
     <section id="about" className="py-16 px-4 md:px-8 bg-background">
@@ -26,7 +26,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           >
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img
-                src={imageSrc}
+                src={aiImage}
                 alt={imageAlt}
                 className="w-full h-auto object-cover aspect-square md:aspect-[4/3]"
               />

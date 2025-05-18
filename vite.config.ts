@@ -1,26 +1,29 @@
 import path from "path";
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import { tempo } from "tempo-devtools/dist/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/showroom/',
-  optimizeDeps: {
-    entries: ["src/main.tsx"],
-  },
-  plugins: [
-    react(),
-    tempo(),
-  ],
-  resolve: {
-    preserveSymlinks: true,
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+
+  
+    base: '/showroom',
+    optimizeDeps: {
+      entries: ["src/main.tsx"],
     },
-  },
-  server: {
-    // @ts-ignore
-    allowedHosts: true,
-  }
+    plugins: [
+      react(),
+      tempo(),
+    ],
+    resolve: {
+      preserveSymlinks: true,
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
+    server: {
+      // @ts-ignore
+      allowedHosts: true,
+    }
+  
 });
